@@ -5,7 +5,7 @@
 
 body{
 	margin: 0;
-	font-family: "Arial", sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 h1{ font-size: 7em; }
@@ -44,7 +44,6 @@ header{
 header .logo{
 	margin: 0;
 	padding: 25px 30px;
-	font-weight: width;
 	color: #f5f5f5;
 	font-size: 3em;
 	font-weight: bold;
@@ -60,8 +59,9 @@ header .container{
 header nav{
 	display: flex;
 	flex-direction: row;
+
 	align-items: center;
-	padding-bottom: 25px;
+	padding-bottom: 10px;
 }
 
 header a{
@@ -90,20 +90,62 @@ header a:hover{
 
 }
 
+.video{
+	padding: 20px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+.video iframe{
+	width: 100%;
+	height: 540px;
+}
 
+.ContentCenter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	background-color: #30475E;
+	padding: 100px 20px;
+	color: #f5f5f5;
+}
 
-#ContentLeft .container{
+.ContentCenter h1{
+	font-size: 3em;
+}
+
+.content{
+	padding: 10px 50px;
+}
+
+.content b{
+	color: #f05454;
+}
+
+.img{
+	width: 90%;
+	margin: auto;
+
+}
+
+.img img{
+	width: 100%;
+}
+
+.ContentLeft .container{
 	padding: 200px 100px;
 
 }
 
-#ContentRight{
+.ContentRight{
 	background-color: #30475E;
 	color: #f5f5f5;
 }
 
-#ContentRight .container{
+.ContentRight .container{
 	
 	padding: 200px 100px;
 }
@@ -200,7 +242,12 @@ footer .container{
 		font-size: 5em;
 	}
 
-	#ContentLeft .texto{
+	.img{
+		width: 40%;
+		margin: auto;
+	}
+
+	.ContentLeft .texto{
 		width: 50%;
 		max-width: 600px;
 		text-align: initial;
@@ -211,16 +258,16 @@ footer .container{
 	}
 
 
-	#ContextLeft h2{
+	.ContextLeft h2{
 		margin: 0;
 	}
 
-	#ContentLeft .container{
+	.ContentLeft .container{
 		display: flex;
 		justify-content: space-evenly;
 	}
 
-	#ContentLeft .img-container{
+	.ContentLeft .img-container{
 			background-image: url(purpose.jpg);	
 			background-size: cover;
 			background-position: center;
@@ -228,7 +275,7 @@ footer .container{
 			width: 50%;
 	}
 
-	#ContentRight .texto{
+	.ContentRight .texto{
 		width: 50%;
 		max-width: 600px;
 		text-align: initial;
@@ -239,16 +286,16 @@ footer .container{
 	}
 
 
-	#ContextRight h2{
+	.ContextRight h2{
 		margin: 0;
 	}
 
-	#ContentRight .container{
+	.ContentRight .container{
 		display: flex;
 		justify-content: space-evenly;
 	}
 
-	#ContentRight .img-container{
+	.ContentRight .img-container{
 			background-image: linear-gradient(0deg,rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(different.jpg);	
 			background-size: cover;
 			background-position: center;
@@ -272,6 +319,28 @@ footer .container{
 	header .logo{
 		font-size: 2em;
 	}
+
+	.video{
+		padding: 20px 10px;
+	}
+
+	.content{
+		padding: 10px 20px;
+	}
+
+	.video iframe{
+		height: 320px;
+	}
+
+
+	.ContentLeft .container{
+		padding: 50px 50px;
+	}
+
+	.ContentRight .container{
+		padding: 50px 50px;
+	}
+
 
 	a{
 		font-size: 1.7em;
